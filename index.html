@@ -3,64 +3,77 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Mario Markovic – Portfolio</title>
+  <title>Raum 2 – Candy-Safe Projekt</title>
   <link rel="stylesheet" href="styles.css">
+  <link href="https://fonts.googleapis.com/css?family=Quicksand:300,400,500,700&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css?family=Roboto&display=swap" rel="stylesheet">
 </head>
 <body>
-  <header>
-    <h1>Mario Markovic</h1>
-    <p>Fachinformatiker – Anwendungsentwicklung</p>
-    <nav>
-      <a href="#about">Über mich</a>
-      <a href="#skills">Skills</a>
-      <a href="#projects">Projekte</a>
-      <a href="#contact">Kontakt</a>
-      <button id="modeToggle">🌙 / ☀️</button>
-    </nav>
-  </header>
 
-  <main>
-    <section id="about">
-      <h2>Über mich</h2>
-      <p>Ich bin ein angehender Anwendungsentwickler mit Leidenschaft für sauberen Code, kreative Lösungen und moderne Webentwicklung.</p>
-    </section>
-
-    <section id="skills">
-      <h2>Skills</h2>
-      <ul>
-        <li>HTML, CSS, JavaScript</li>
-        <li>Java, Python, SQL</li>
-        <li>Git, GitHub, VS Code</li>
-      </ul>
-    </section>
-
-    <section id="projects">
-      <h2>Projekte</h2>
-      <div class="project">
-        <h3>Bohrkosten-Abrechner</h3>
-        <p>Java-Programm zur Abrechnung von Kernbohrungen mit GUI, Zuschlägen und PDF-Ausgabe.</p>
+<div class="wraper">
+  <div class="container">
+    <div class="left-content">
+      <div class="logo">
+        <a href="#">Raum 2</a>
       </div>
-      <div class="project">
-        <h3>Arduino Candy-Safe</h3>
-        <p>PIN-geschützter Tresor mit LCD, Servo & Alarm – gebaut mit Arduino & Tinkercad.</p>
+      <nav class="nav">
+        <ul>
+          <li><a href="#about">Über uns</a></li>
+          <li><a href="#skills">Skills</a></li>
+          <li><a href="#projects">Projekt</a></li>
+          <li><a href="#contact">Kontakt</a></li>
+        </ul>
+      </nav>
+      <div class="left-footer">
+        <div class="foot-contact">
+          <ul>
+            <li>Email: <a href="mailto:ludjakmario@gmail.com">ludjakmario@gmail.com</a></li>
+          </ul>
+        </div>
+        <div class="social-icons">
+          <ul>
+            <li><a href="https://github.com/mrc0-dev" target="_blank">GitHub</a></li>
+          </ul>
+        </div>
       </div>
-    </section>
+    </div>
 
-    <section id="contact">
-      <h2>Kontakt</h2>
-      <p>Du willst mit mir arbeiten oder hast Fragen? Schreib mir eine <a href="mailto:ludjakmario@gmail.com">E-Mail</a>!</p>
-    </section>
-  </main>
+    <div class="main-content">
+      <section class="user-profile">
+        <p class="sm-text">Hallo, wir sind</p>
+        <h1 class="name">Raum 2</h1>
+        <h2 class="role">Candy-Safe Entwicklerteam</h2>
+        <p class="text">
+          Wir sind ein Projektteam aus der Umschulung zum Fachinformatiker für Anwendungsentwicklung. In unserem Arduino-Projekt haben wir einen Candy-Safe mit PIN-Schutz, Servo-Motor, LCD-Anzeige und Alarmfunktion gebaut.
+        </p>
 
-  <footer>
-    <p>© 2025 Mario Markovic</p>
-  </footer>
+        <div class="pr-list" id="skills">
+          <h3 class="pg-title">Skills</h3>
+          <ul>
+            <li>Arduino, Tinkercad, C++</li>
+            <li>Schaltplan-Design und Mikrocontroller-Programmierung</li>
+            <li>LCD-Ansteuerung, Keypad, Servo, Buzzer</li>
+          </ul>
+        </div>
 
-  <script>
-    const toggle = document.getElementById('modeToggle');
-    toggle.addEventListener('click', () => {
-      document.body.classList.toggle('dark');
-    });
-  </script>
+        <div class="pr-list" id="projects">
+          <h3 class="pg-title">Unser Projekt</h3>
+          <ul>
+            <li>
+              <strong>Arduino Candy-Safe:</strong><br>
+              Ein Tresor mit Sicherheitscode, gebaut mit Arduino. Bei korrekter PIN-Eingabe öffnet sich das Schloss automatisch – bei falscher Eingabe gibt es einen Alarm. Das Projekt umfasst LCD-Display, Tastenfeld, Servo und akustische Rückmeldung.
+            </li>
+          </ul>
+        </div>
+
+        <div class="pr-list" id="contact">
+          <h3 class="pg-title">Kontakt</h3>
+          <p>Fragen oder Interesse an unserem Projekt? Schreib uns eine <a href="mailto:ludjakmario@gmail.com">E-Mail</a>!</p>
+        </div>
+      </section>
+    </div>
+  </div>
+</div>
+
 </body>
 </html>
